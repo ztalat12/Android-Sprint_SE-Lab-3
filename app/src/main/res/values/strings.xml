@@ -3,4 +3,6 @@
     <string name="content_text">sample_text</string>
     <string name="add_button_text">Add City</string>
     <string name="delete_button_text">Delete City</string>
+    <string name="city_text">City</string>
+    <string name="province_text">Province</string>
 </resources>
