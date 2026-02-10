@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements AddCityFragment.E
         cityAdapter = new CityArrayAdapter(this, dataList);
         cityList.setAdapter(cityAdapter);
 
-        // EDIT: Handle clicks on list items to edit them
+        // clicks on list items to edit them
         cityList.setOnItemClickListener((parent, view, position, id) -> {
             City selectedCity = dataList.get(position);
             AddCityFragment.newInstance(selectedCity).show(getSupportFragmentManager(), "EDIT_CITY");
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements AddCityFragment.E
 
         FloatingActionButton fab = findViewById(R.id.button_add_city);
         if (fab != null) {
-            fab.hide(); // Hide the FAB if it exists in the layout
+            fab.hide(); 
         }
     }
 }
